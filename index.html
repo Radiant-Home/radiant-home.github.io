@@ -1,22 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Radiant Home Solutions</title>
-    </head>
-    <body>
-        <h1>This is a Heading</h1>
-        <p>This is a paragraph.</p>
-        <ol>
-            <li><iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin"
-                 style="width:120px;height:240px;"
-                 marginwidth="0"
-                 marginheight="0"
-                 scrolling="no"
-                 frameborder="0"
-                 src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=radianthomeso-20&language=en_US&marketplace=amazon&region=US&placement=B0957T1S9C&asins=B0957T1S9C&linkId=0dca066aa476d8258c0a14eba4f63f4d&show_border=true&link_opens_in_new_window=true">
-                </iframe>
-            </li>
-            <li>Item 2</li>
-        </ol>
-    </body>
+<head>
+    <title>Radiant Home Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .logo {
+            width: 180px; /* Adjust as needed */
+            height: auto;
+        }
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #333; /* Charcoal gray */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .nav-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-menu li {
+            float: left;
+        }
+        .nav-menu li a {
+            display: block;
+            color: #F5F5F5; /* Off-white */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: 'Lato', sans-serif; /* Lato font */
+            font-size: large;
+        }
+        .nav-menu li a:hover {
+            background-color: #111; /* Darker gray for hover effect */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="images/logo.webp" alt="Radiant Home Solutions Logo" class="logo">
+        <ul class="nav-menu">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <!-- Rest of your HTML code -->
+</body>
 </html>
