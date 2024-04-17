@@ -246,9 +246,16 @@
         </p>
       </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
     <script>
-      // Any required JavaScript
+      fetch("readme.md")
+        .then((response) => response.text())
+        .then((text) => {
+          var converter = new showdown.Converter(),
+            html = converter.makeHtml(text);
+          // Insert the HTML into your page
+          document.getElementById("content").innerHTML = html;
+        });
     </script>
   </body>
 </html>
